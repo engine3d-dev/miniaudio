@@ -7,5 +7,4 @@ build_library(
 
 generate_compile_commands()
 
-target_include_directories(${PROJECT_NAME} PUBLIC ./)
-target_include_directories(${PROJECT_NAME} PRIVATE audio audio/internal)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR})
